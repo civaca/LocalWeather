@@ -5,14 +5,13 @@ document.addEventListener("DOMContentLoaded", function(event){
     var y;
     
     if(navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(showPosition);
+          navigator.geolocation.getCurrentPosition(showP);
       } else {document.getElementById("temp").innerHTML = "No supported";}
-    }); /*closure of loaded*/
+    
 
-
-    function showPosition(position){
-        x= position.coords.latitude;
-        y= position.coords.longitude;
+    function showP(pos){
+        x= pos.coords.latitude;
+        y= pos.coords.longitude;
                  
     var ajax =  new XMLHttpRequest();
     
@@ -39,4 +38,5 @@ document.addEventListener("DOMContentLoaded", function(event){
 
   
 } /* closure of position*/
+}); /*closure of loaded*/
 
