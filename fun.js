@@ -31,44 +31,44 @@ document.addEventListener("DOMContentLoaded", function (event) {
         /*backgrouns*/
         switch (newAjax.weather[0].icon){
             case "01d":
-                back = "skyclearr.jpeg";
+                back = "https://static.pexels.com/photos/209798/pexels-photo-209798.jpeg";
                 break;
             case "02d":
-                back = "fewclouds.jpeg";
+                back = "https://static.pexels.com/photos/539164/pexels-photo-539164.jpeg";
                 break;
             case "03d":
             case "04d":
-                back = "skyclear.jpeg";
+                back = "https://static.pexels.com/photos/412462/pexels-photo-412462.jpeg";
                 break;
             case "09d":
             case "10d":
             case "11d":
-                back = "rain.jpeg";
+                back = "https://static.pexels.com/photos/39811/pexels-photo-39811.jpeg";
                 break;
             case "13d":
-                back = "snow.jpeg";
+                back = "https://static.pexels.com/photos/309384/pexels-photo-309384.jpeg";
                 break;
             case "50d":
-                back = "mist.jpeg";
+                back = "https://static.pexels.com/photos/157304/pexels-photo-157304.jpeg";
                 break;
             case "01n":
-                back = "night.jpg";
+                back = "https://static.pexels.com/photos/33688/delicate-arch-night-stars-landscape.jpg";
                 break;
             case "02n":
             case "03n":
             case "04n":
-                back = "cloudsnight.jpeg";
+                back = "https://static.pexels.com/photos/239107/pexels-photo-239107.jpeg";
                 break;
             case "09n":
             case "10n":
             case "11n":
-                back = "nightrain.jpeg";
+                back = "https://static.pexels.com/photos/119569/pexels-photo-119569.jpeg";
                 break;
             case "13n":
-                back = "snown.jpeg";
+                back = "https://static.pexels.com/photos/280204/pexels-photo-280204.jpeg";
                 break;
             case "50n":
-                back = "mistnight.jpeg";
+                back = "https://static.pexels.com/photos/327308/pexels-photo-327308.jpeg";
                 
                 
                 
