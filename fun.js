@@ -1,5 +1,10 @@
 document.addEventListener("DOMContentLoaded", function (event) {
-   
+    function tChange(m){
+            document.getElementById("change").innerHTML = m;
+            change.setAttribute("class", "alert-info");
+            
+            
+        }
     /*get positions*/
     var x, y;
     
@@ -30,50 +35,50 @@ document.addEventListener("DOMContentLoaded", function (event) {
        
       var back="";
         /*backgrouns*/
-        switch (newAjax.weather[0].icon){
-            case "01d":
-                back = "skyclearr.jpeg";
-                break;
-            case "02d":
-                back = "fewclouds.jpeg";
-                break;
-            case "03d":
-            case "04d":
-                back = "skyclear.jpeg";
-                break;
-            case "09d":
-            case "10d":
-            case "11d":
-                back = "rain.jpeg";
-                break;
-            case "13d":
-                back = "snow.jpeg";
-                break;
-            case "50d":
-                back = "mist.jpeg";
-                break;
-            case "01n":
-                back = "night.jpg";
-                break;
-            case "02n":
-            case "03n":
-            case "04n":
-                back = "cloudsnight.jpeg";
-                break;
-            case "09n":
-            case "10n":
-            case "11n":
-                back = "nightrain.jpeg";
-                break;
-            case "13n":
-                back = "snown.jpeg";
-                break;
-            case "50n":
-                back = "mistnight.jpeg";
-                
-                
-                
-                                       };
+       switch (newAjax.weather[0].icon){
+           case "01d":
+               back = "https://static.pexels.com/photos/209798/pexels-photo-209798.jpeg";
+               break;
+           case "02d":
+               back = "https://static.pexels.com/photos/539164/pexels-photo-539164.jpeg";
+               break;
+           case "03d":
+           case "04d":
+               back = "https://static.pexels.com/photos/412462/pexels-photo-412462.jpeg";
+               break;
+           case "09d":
+           case "10d":
+           case "11d":
+               back = "https://static.pexels.com/photos/39811/pexels-photo-39811.jpeg";
+               break;
+           case "13d":
+               back = "https://static.pexels.com/photos/309384/pexels-photo-309384.jpeg";
+               break;
+           case "50d":
+               back = "https://static.pexels.com/photos/157304/pexels-photo-157304.jpeg";
+               break;
+           case "01n":
+               back = "https://static.pexels.com/photos/33688/delicate-arch-night-stars-landscape.jpg";
+               break;
+           case "02n":
+           case "03n":
+           case "04n":
+               back = "https://static.pexels.com/photos/239107/pexels-photo-239107.jpeg";
+               break;
+           case "09n":
+           case "10n":
+           case "11n":
+               back = "https://static.pexels.com/photos/119569/pexels-photo-119569.jpeg";
+               break;
+           case "13n":
+               back = "https://static.pexels.com/photos/280204/pexels-photo-280204.jpeg";
+               break;
+           case "50n":
+               back = "https://static.pexels.com/photos/327308/pexels-photo-327308.jpeg";
+               
+               
+               
+                                      }
         
         /* closure of switch*/
          document.body.style.backgroundImage = "url("+back+")";
@@ -88,12 +93,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         
      linkT.appendChild(t);
     document.getElementById("tempAndSign").appendChild(linkT);
-        function tChange(m){
-            document.getElementById("change").innerHTML = m;
-            change.setAttribute("class", "alert-info");
-            
-            
-        }
+       
         
         tChange(" °C");
         /*change to farengh*/
@@ -102,8 +102,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
       if (document.getElementById("temp").innerHTML== newAjax.main.temp_max) {
          var c = (newAjax.main.temp_max*(9/5));
           document.getElementById("temp").innerHTML = c.toPrecision(4);
-        tChange(" °F")} else {document.getElementById("temp").innerHTML = newAjax.main.temp_max; tChange(" °C")
-        ;}
+        tChange(" °F");} else {document.getElementById("temp").innerHTML = newAjax.main.temp; 
+                              tChange(" °C") ; }
     
         }); /* closure of change*/
     } /* closure of if*/
@@ -114,5 +114,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
   
 } /* closure of position*/
 }); /*closure of loaded*/
+
 
 
