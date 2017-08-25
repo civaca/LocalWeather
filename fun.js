@@ -91,6 +91,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         linkT.setAttribute("id", "change");
         var t = document.createTextNode(" C°");
         
+        
      linkT.appendChild(t);
     document.getElementById("tempAndSign").appendChild(linkT);
        
