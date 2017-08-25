@@ -1,7 +1,37 @@
+body{
+    color:#FFFFFF;
+    font-family: Anton;
+    font-weight: bold !important;
+}
+
+
 #tempAndSign{
     margin-left:0px;
+    display:block;
+    float:left;
+    
 }
-#temp{
-    margin-right:-29px ;
-    margin-left:29px ;
+#title{
+    margin-top: 1%;
+    padding:60px 30px 10px 30px;
+    font-style: italic;
+    
+}
+#name{
+    padding:25px
+}
+#main-content{
+    background: rgba(64,64,64, 0.3) ;
+    margin: 8% 15% 10% 15%;
+    
+}
+
+a:hover {
+    text-decoration: none;
+    
+}
+
+#change{
+    padding-right: 9px;
+    
 }

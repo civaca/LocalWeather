@@ -22,8 +22,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
   ajax.onreadystatechange = function(){
     if (this.readyState == 4 && this.status == 200){
         var newAjax = JSON.parse(this.responseText);
-      console.log(newAjax);
-      document.getElementById("name").innerHTML = newAjax.name; /*City*/
+      
+      document.getElementById("name").innerHTML = newAjax.name + ", "+ newAjax.sys.country;/*City*/
+         document.getElementById("description").innerHTML = newAjax.weather[0].description;
         document.getElementById("temp").innerHTML = newAjax.main.temp; /*Tem*/
         document.getElementById("graph").src = "http://openweathermap.org/img/w/"+newAjax.weather[0].icon +".png";/*link*/
        
@@ -73,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 
                 
                                        };
-        console.log(back);
+        
         /* closure of switch*/
          document.body.style.backgroundImage = "url("+back+")";
         
@@ -84,19 +85,24 @@ document.addEventListener("DOMContentLoaded", function (event) {
         var linkT= document.createElement("A");
         linkT.setAttribute("id", "change");
         var t = document.createTextNode(" C°");
+        
      linkT.appendChild(t);
     document.getElementById("tempAndSign").appendChild(linkT);
         function tChange(m){
             document.getElementById("change").innerHTML = m;
+            change.setAttribute("class", "alert-info");
+            
             
         }
         
-        tChange(" C°");
+        tChange(" °C");
         /*change to farengh*/
         
         document.getElementById("change").addEventListener("click",function changeToFr(){
-      if (document.getElementById("temp").innerHTML== newAjax.main.temp_max) { document.getElementById("temp").innerHTML = (newAjax.main.temp_max*(9/5))+32;
-        tChange(" F°")} else {document.getElementById("temp").innerHTML = newAjax.main.temp_max; tChange(" C°")
+      if (document.getElementById("temp").innerHTML== newAjax.main.temp_max) {
+         var c = (newAjax.main.temp_max*(9/5));
+          document.getElementById("temp").innerHTML = c.toPrecision(4);
+        tChange(" °F")} else {document.getElementById("temp").innerHTML = newAjax.main.temp_max; tChange(" °C")
         ;}
     
         }); /* closure of change*/
@@ -108,4 +114,5 @@ document.addEventListener("DOMContentLoaded", function (event) {
   
 } /* closure of position*/
 }); /*closure of loaded*/
+
 
