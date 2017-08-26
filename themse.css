@@ -18,11 +18,11 @@ body{
     
 }
 #name{
-    padding:25px
+    padding:25px;
 }
 #main-content{
     background: rgba(64,64,64, 0.3) ;
-    margin-top: 8%
+    margin-top: 8%;
     
 }
 
