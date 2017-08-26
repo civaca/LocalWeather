@@ -37,44 +37,44 @@ document.addEventListener("DOMContentLoaded", function (event) {
         /*backgrouns*/
        switch (newAjax.weather[0].icon){
            case "01d":
-               back = "skyclearr.jpeg";
+               back = "skyclearr-min.jpeg";
                break;
            case "02d":
-               back = "fewclouds.jpeg";
+               back = "fewclouds-min.jpeg";
                break;
            case "03d":
            case "04d":
-               back = "skyclear.jpeg";
+               back = "skyclear-min.jpeg";
                break;
            case "09d":
            case "10d":
            case "11d":
-               back = "rain.jpeg";
+               back = "rain-min.jpeg";
                break;
            case "13d":
-               back = "snow.jpeg";
+               back = "snow-min.jpeg";
                break;
            case "50d":
-               back = "mist.jpeg";
+               back = "mist-min.jpeg";
                break;
            case "01n":
-               back = "night.jpg";
+               back = "night-min.jpg";
                break;
            case "02n":
            case "03n":
            case "04n":
-               back = "cloudsnight.jpeg";
+               back = "cloudsnight-min.jpeg";
                break;
            case "09n":
            case "10n":
            case "11n":
-               back = "nightrain.jpeg";
+               back = "nightrain-min.jpeg";
                break;
            case "13n":
-               back = "snown.jpeg";
+               back = "snown-min.jpeg";
                break;
            case "50n":
-               back = "mistnight.jpeg";
+               back = "mistnight-min.jpeg";
                
                
                
