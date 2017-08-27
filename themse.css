@@ -16,7 +16,7 @@ body {
     
 }
 #title{
-    margin-top: 1%;
+    margin-top: 1em;
     padding:60px 30px 10px 30px;
     font-style: italic;
     font-size:10em;
@@ -28,7 +28,7 @@ body {
 }
 #main-content{
     background: rgba(64,64,64, 0.3) ;
-    margin-top: 5% ;
+    margin-top: 8em ;
     
 }
 
