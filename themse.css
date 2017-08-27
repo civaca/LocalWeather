@@ -17,12 +17,12 @@
     margin-top: 1%;
     padding:60px 30px 10px 30px;
     font-style: italic;
-    font-size:5.5em;
+    font-size:70px;
     
 }
 #name{
     padding:25px;
-    font-size:4.5em;
+    font-size:72px;
 }
 #main-content{
     background: rgba(64,64,64, 0.3) ;
@@ -33,16 +33,16 @@
 
 #change{
     padding-right: 9px;
-    font-size:1em;
+    font-size:30px;
 }
 
 #temp{
-     font-size:4.5em;
+     font-size:60px;
     margin-left: 40px;
 }
 
 #description{
-     font-size:4.5em;
+     font-size:60px;
 }
 #graph{
     height: 120px;
