@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         
         document.getElementById("change").addEventListener("click",function changeToFr(){
       if (document.getElementById("temp").innerHTML== newAjax.main.temp_max) {
-         var c = (newAjax.main.temp_max*(9/5));
+         var c = (newAjax.main.temp_max*(9/5)+32);
           document.getElementById("temp").innerHTML = c.toPrecision(4);
         tChange(" °F");} else {document.getElementById("temp").innerHTML = newAjax.main.temp; 
                               tChange(" °C") ; }
