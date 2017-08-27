@@ -19,32 +19,32 @@ body {
     margin-top: 1%;
     padding:60px 30px 10px 30px;
     font-style: italic;
-    font-size:8em;
+    font-size:10em;
     
 }
 #name{
     padding:25px;
-    font-size:7em;
+    font-size:9em;
 }
 #main-content{
     background: rgba(64,64,64, 0.3) ;
-    margin-top: 2% ;
+    margin-top: 5% ;
     
 }
 
 
 #change{
     padding-right: 9px;
-    font-size:1.6em;
+    font-size:1.8em;
 }
 
 #temp{
-     font-size:7em;
+     font-size:9em;
     margin-left: 40px;
 }
 
 #description{
-     font-size:7em;
+     font-size:9em;
 }
 #graph{
     height: 120px;
