@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function (event) {
     function tChange(m){
             document.getElementById("change").innerHTML = m;
-            change.setAttribute("class", "alert-info");
+            change.setAttribute("class", "alert-info btn");
             
             
         }
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                
                
                                       }
-        
+     
         /* closure of switch*/
          document.body.style.backgroundImage = "url("+back+")";
         
@@ -115,6 +115,5 @@ document.addEventListener("DOMContentLoaded", function (event) {
   
 } /* closure of position*/
 }); /*closure of loaded*/
-
 
 

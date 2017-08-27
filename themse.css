@@ -1,7 +1,8 @@
-body{
-    color:#FFFFFF !important;
-    font-family: Anton !important;
-    font-weight: bold !important;
+#main-body{
+    color:#FFFFFF ;
+    font-family: Anton;
+    
+    
 }
 
 
@@ -15,23 +16,34 @@ body{
     margin-top: 1%;
     padding:60px 30px 10px 30px;
     font-style: italic;
+    font-size:5.3em;
     
 }
 #name{
     padding:25px;
+    font-size:4em;
 }
 #main-content{
     background: rgba(64,64,64, 0.3) ;
-    margin-top: 8%;
+    margin-top: 3%;
     
 }
 
-a:hover {
-    text-decoration: none;
-    
-}
 
 #change{
     padding-right: 9px;
-    
+    font-size:1.3em;
+}
+
+#temp{
+     font-size:4em;
+    margin-left: 40px;
+}
+
+#description{
+     font-size:4em;
+}
+#graph{
+    height: 120px;
+    width: 120px;
 }
