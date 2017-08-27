@@ -16,37 +16,39 @@ body {
     
 }
 #title{
-    margin-top: 1em;
     padding:60px 30px 10px 30px;
     font-style: italic;
-    font-size:10em;
+    font-size:6em;
     
 }
 #name{
     padding:25px;
-    font-size:9em;
+    font-size:6em;
 }
 #main-content{
     background: rgba(64,64,64, 0.3) ;
-    margin-top: 8em ;
+    margin-top: 1% ;
     
 }
 
 
 #change{
     padding-right: 9px;
-    font-size:1.8em;
+    font-size:0.8em;
 }
 
 #temp{
-     font-size:9em;
+     font-size:6em;
     margin-left: 40px;
 }
 
 #description{
-     font-size:9em;
+     font-size:6em;
+    margin-left: 130px
 }
 #graph{
-    height: 120px;
-    width: 120px;
+    height: 100px;
+    width: 100px;
+/*    margin-right: 110px*/
+    
 }
