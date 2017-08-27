@@ -1,6 +1,6 @@
 #main-body{
     color:#FFFFFF ;
-/*    font-family: Anton;*/
+    font-family: Anton;
     
     
 }
@@ -16,16 +16,16 @@
     margin-top: 1%;
     padding:60px 30px 10px 30px;
     font-style: italic;
-    font-size:400px!important;
+    font-size:5.3em;
     
 }
 #name{
     padding:25px;
-    font-size:4em !important;
+    font-size:4em;
 }
 #main-content{
     background: rgba(64,64,64, 0.3) ;
-    margin-top: 3% !important;
+    margin-top: 3% ;
     
 }
 
