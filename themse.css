@@ -1,4 +1,6 @@
-
+body {
+    font-size: 100%;
+}
     
 #main-body{
     color:#FFFFFF ;
@@ -18,12 +20,12 @@
     margin-top: 1%;
     padding:60px 30px 10px 30px;
     font-style: italic;
-    font-size:80px;
+    font-size:5.5em;
     
 }
 #name{
     padding:25px;
-    font-size:60px;
+    font-size:4.5em;
 }
 #main-content{
     background: rgba(64,64,64, 0.3) ;
@@ -34,16 +36,16 @@
 
 #change{
     padding-right: 9px;
-    font-size:30px;
+    font-size:1em;
 }
 
 #temp{
-     font-size:60px;
+     font-size:4.5em;
     margin-left: 40px;
 }
 
 #description{
-     font-size:65px;
+     font-size:4.5em;
 }
 #graph{
     height: 120px;
