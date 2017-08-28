@@ -1,5 +1,5 @@
 body {
-    font-size: 100% ;
+    font-size: 100%;
 }
 #main-body{
     color:#FFFFFF ;
@@ -18,16 +18,16 @@ body {
 #title{
     padding:60px 30px 10px 30px;
     font-style: italic;
-    font-size:6em;
+    font-size:4em;
     
 }
 #name{
     padding:25px;
-    font-size:6em;
+    font-size:4em;
 }
 #main-content{
     background: rgba(64,64,64, 0.3) ;
-    margin-top: 4em ;
+    margin-top: 7em ;
     
 }
 
@@ -38,13 +38,13 @@ body {
 }
 
 #temp{
-     font-size:6em;
+     font-size:4em;
     margin-left: 40px;
 }
 
 #description{
-     font-size:6em;
-    margin-left: 130px
+     font-size:4em;
+    margin-left: 40px
 }
 #graph{
     height: 100px;
