@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     /*ajax conection*/             
     var ajax =  new XMLHttpRequest();
     
-   ajax.open("GET", "https://api.openweathermap.org/data/2.5/weather?lat="+x+"&lon="+y+"&units=metric&APPID=62574c2209eb237396a85b02230c5411",true);
+   ajax.open("GET", "https://fcc-weather-api.glitch.me/api/current?lat="+x+"&lon="+y,true);
     ajax.send(); 
  
   ajax.onreadystatechange = function(){
@@ -31,11 +31,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
       document.getElementById("name").innerHTML = newAjax.name + ", "+ newAjax.sys.country;/*City*/
          document.getElementById("description").innerHTML = newAjax.weather[0].description;
         document.getElementById("temp").innerHTML = newAjax.main.temp; /*Tem*/
-        document.getElementById("graph").src = "http://openweathermap.org/img/w/"+newAjax.weather[0].icon +".png";/*link*/
-       
-      var back="";
+        document.getElementById("graph").src =newAjax.weather[0].icon;/*link*/
+        console.log()
+       var icons = newAjax.weather[0].icon.split("").slice(62,65).join("");
+        var back="";
         /*backgrouns*/
-       switch (newAjax.weather[0].icon){
+       switch (icons){
            case "01d":
                back = "skyclearr-min.jpeg";
                break;
